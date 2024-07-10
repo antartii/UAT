@@ -73,6 +73,7 @@ We’ve developped some libs to handle .UAT files for the C language, but you ca
 # CUAT - C library for .UAT files handling
 
 C library for .UAT datas and files handling.
+Version 1.0.0
 
 ## Usage
 
