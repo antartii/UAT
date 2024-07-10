@@ -203,6 +203,30 @@ gcc -Icuat/includes/ cuat.a main.c -o program
     ```C
     #include "cuat.h"
 
+    char *read_file_content(const char *file_path)
+    {
+        char *file_content = NULL;
+        FILE *file = NULL;
+        long file_size = 0;
+
+        if (!file_path)
+            return NULL;
+        file = fopen(file_path, "r");
+        if (!file)
+            return NULL;
+        if (fseek(file, 0, SEEK_END) != 0) {
+            fclose(file);
+            return NULL;
+        }
+        file_size = ftell(file);
+        rewind(file);
+        file_content = malloc(sizeof(char) * (file_size + 1));
+        fread(file_content, 1, file_size, file);
+        file_content[file_size] = '\0';
+        fclose(file);
+        return file_content;
+    }
+
     int main(void)
     {
         char file_path[] = "../example.uat";
