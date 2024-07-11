@@ -36,7 +36,7 @@ Always make sure that row and cells opener have their closers later on.
 
 Row separator character won’t be used as a separator if they are contained inside of a cell, meaning you can use thoses character for you values.
 
-| Line 1 | Cell with | character | Cell 2 line 1 |
+| Line 1 | Cell with \| character | Cell 2 line 1 |
 | --- | --- | --- |
 | Line 2 | Cell 1 line 2 | Cell 2 line 2 |
 
@@ -50,7 +50,7 @@ Row separator character won’t be used as a separator if they are contained ins
 
 Every character written outside of the rows or cells separators won’t be considered as data therefore they will be commentary.
 
-| Line 1 | Cell with | character | Cell 2 line 1 |
+| Line 1 | Cell with \| character | Cell 2 line 1 |
 | --- | --- | --- |
 | Line 2 | Cell 1 line 2 | Cell 2 line 2 |
 
@@ -66,7 +66,7 @@ This is a comment at the end of the table
 We recommend to parse the table of data from .UAT into array of array inside of your code :
 
 - **C :** char *** (array of array of string)
-- **C++ :** vector<vector<string>> (array of array of string)
+- **C++ :** vector<vector\<string>> (array of array of string)
 
 We’ve developped some libs to handle .UAT files for the C language, but you can always improve our functions by changing the open-source functions or you can make a parser by yourself !
 
@@ -200,6 +200,18 @@ gcc -Icuat/includes/ cuat.a main.c -o program
         ```
     ## Example
     **Converting a uat file to a uat table**
+      *example.uat*
+    ```uat
+    |`You can write any commentary you want and need here
+    |`This` `is` `a|` `test`| or between row separators
+    |`for``testing`
+    or even between cells separators
+    
+    `purposes`|
+    
+    And of course at the end of the file
+    ```
+    *main.c*
     ```C
     #include "cuat.h"
 
@@ -253,7 +265,11 @@ gcc -Icuat/includes/ cuat.a main.c -o program
         return 0;
     }
     ```
-    **Converting a string table to a uat string
+    | This | is | a\| | test |
+    | -- | -- | -- | -- |
+    | for | testing | purposes |  |
+
+    **Converting a string table to a uat string**
     ```C
     int main(void)
     {
