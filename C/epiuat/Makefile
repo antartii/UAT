@@ -8,7 +8,7 @@
 CC = gcc
 AR = ar rcs
 
-TARGET = epicuat.a
+TARGET = epiuat.a
 CFLAGS = -I$(INCLUDE_DIR)\
 	$(foreach dependencies,$(DEPENDENCIES),-I$(dependencies)/include)
 

@@ -25,12 +25,6 @@ int append_str_arr(char ***str_arr_address, const char *new_str)
     return 0;
 }
 
-/**
- * @brief duplicate the content of a string array
- *
- * @param str_arr array of string to duplicate
- * @return Returns a duplicate of the string array
- */
 char **str_arr_dup(const char **str_arr)
 {
     char **duplicate = NULL;
