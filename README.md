@@ -71,13 +71,14 @@ We recommend to parse the table of data from .UAT into array of array inside of 
 We’ve developped some libs to handle .UAT files for the C language, but you can always improve our functions by changing the open-source functions or you can make a parser by yourself !
 
 - **Epiuat** : Library for uat file handling in C made for the coding style of epitech
+- **Pyuat** : Python library for uat file handling
 
 # To do list
 
+- [ ]  Fix the C1 coding style error somewhere
+- [ ]  C base uat library (cleaned without epitech's coding style)
 - [ ]  C++ base uat library
-- [ ]  Python base uat library
-- [ ]  Epitech’s coding style library (C programming language)
 
 # Team
 
-Anta - Dev for the C, C++ and python libraries
+[DEV] Anta - Dev for the C, C++ and python libraries

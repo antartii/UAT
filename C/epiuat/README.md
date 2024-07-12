@@ -1,8 +1,9 @@
 # EPIUAT - Epitech’s uat library
 
-This library is specifically made for Epitech’s student that needs to have a program that follows some rules in their coding-style.
+This uat library is specifically made for Epitech’s student that needs to have a program that follows some rules in their coding-style.
 
 */!\ The current team may not update this library after the end of the year 2025 /!\*
+*Version 1.1.0*
 
 ---
 
