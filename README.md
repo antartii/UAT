@@ -82,3 +82,8 @@ We’ve developped some libs to handle .UAT files for the C language, but you ca
 # Team
 
 [DEV] Anta - Dev for the C, C++ and python libraries
+
+# Contact
+[EMAIL] : fireslidefr@gmail.com
+*Please contact us if you encounters any errors, bugs, have questions or if you need new features*
+*If you're an Epitech student please be aware that using something that you don't understand could potentially end up giving you an E at your project's grade*

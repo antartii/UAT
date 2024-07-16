@@ -1,6 +1,7 @@
-# EPIUAT - Epitech’s uat library
+# Python - Python uat library
 
 Python library for uat files handlings.
+*Version 1.0.0*
 
 ---
 
@@ -79,7 +80,7 @@ def uat_string_to_table(uat_string):
     return uat_table
 ```
 
-**table_to_uat_string** : Convert a table into a uat string
+**Pyuat.table_to_uat_string** : Convert a table into a uat string
 ```python
 def table_to_uat_string(table, row_separator, col_separator):
     uat_string = row_separator + col_separator
